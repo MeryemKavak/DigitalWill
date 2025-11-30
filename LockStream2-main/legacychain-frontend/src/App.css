@@ -1,0 +1,182 @@
+/* Genel Arka Plan ve Font */
+body {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Kart Tasarımı */
+.glass-card {
+  background: rgba(30, 41, 59, 0.85);
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #334155;
+  width: 420px;
+  box-shadow: 0 0 60px rgba(0, 210, 255, 0.15);
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+/* Başlıklar */
+h1 {
+  color: #38bdf8;
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+p {
+  color: #94a3b8;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* Input ve Textarea */
+input, textarea {
+  width: 100%;
+  background: #0f172a;
+  border: 1px solid #334155;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #38bdf8;
+  outline: none;
+}
+
+/* Label */
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* Butonlar */
+.btn-connect {
+  background: #22c55e;
+  color: #000;
+  font-weight: bold;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.btn-connect:hover {
+  background: #16a34a;
+}
+
+.btn-submit {
+  background: linear-gradient(to right, #38bdf8, #3b82f6);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  transform: scale(1.02);
+}
+
+/* Cüzdan Rozeti */
+.wallet-badge {
+  background: #1e293b;
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #38bdf8;
+  border: 1px solid #334155;
+}
+
+/* Kopyalama Butonu */
+.copy-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #94a3b8;
+  transition: color 0.2s ease;
+}
+
+.copy-btn:hover {
+  color: #38bdf8;
+}
+
+.copy-feedback {
+  font-size: 12px;
+  color: #22c55e;
+  margin-bottom: 10px;
+}
+
+/* Doğrulama İkonu */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon input {
+  padding-right: 30px;
+}
+
+.validation-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+/* Durum Kutusu */
+.status-box {
+  margin-top: 20px;
+  padding: 10px;
+  background: #1e293b;
+  border-radius: 8px;
+  font-size: 12px;
+  white-space: pre-line;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.status-box.success {
+  background: #064e3b;
+  color: #22c55e;
+}
+
+.status-box.error {
+  background: #7f1d1d;
+  color: #f87171;
+}
+
+/* Grid Yapısı */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.col {
+  flex: 1;
+}
